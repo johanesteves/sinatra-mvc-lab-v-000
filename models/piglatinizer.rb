@@ -18,7 +18,6 @@ class PigLatinize
       split_text = self.text.split("")
       vowel_index = split_text.index {|letter| vowels.include?(letter) }
       result_text = split_text.rotate(vowel_index).join("") + "AY"
-
     end
   end
 end
