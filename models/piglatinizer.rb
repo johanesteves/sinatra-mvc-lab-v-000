@@ -17,7 +17,7 @@ class PigLatinizer
     first_letter = self.firstletter(text)
 
     if vowels.include?(first_letter)
-      result_text = self.text + "WAY"
+      result_text = text + "WAY"
     else
       split_text = self.text.split("")
       vowel_index = split_text.index {|letter| vowels.include?(letter) }
