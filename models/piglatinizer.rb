@@ -16,7 +16,7 @@ class PigLatinize
       result_text = self.text + "way"
     else
       split_text = self.text.split("")
-      split_text.detect.with_index
+      split_text.index {|letter| vowels.include(letter) }
     end
   end
 end
