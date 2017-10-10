@@ -17,7 +17,9 @@ class PigLatinize
     else
       split_text = self.text.split("")
       vowel_index = split_text.index {|letter| vowels.include?(letter) }
-
+      vowel_index.times do
+        split_text.rotate(1)
+      end
 
     end
   end
