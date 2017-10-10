@@ -15,12 +15,10 @@ class PigLatinizer
 
   def piglatinize(text)
     vowels = ["A","E", "I", "O", "U", "a", "e", "i", "o", "u"]
-    text = text.upcase
     first_letter = self.firstletter(text)
 
     if vowels.include?(first_letter)
-      result_text = text + "WAY"
-      result_text.downcase
+      result_text = text + "way"
     else
       split_text = text.split("")
       vowel_index = split_text.index {|letter| vowels.include?(letter) }
