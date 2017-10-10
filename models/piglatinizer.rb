@@ -13,6 +13,6 @@ class PigLatinize
     vowels = ["A","E", "I", "O", "U"]
 
     if vowels.include(self.firstletter)
-      split_text = text.split("")
+      test + "way"
   end
 end
