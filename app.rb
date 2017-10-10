@@ -7,6 +7,6 @@ class App < Sinatra::Base
   end
 
   post '/results' do
-    "thanks"
+    PigLatinize.new(params[:string])
   end
 end
