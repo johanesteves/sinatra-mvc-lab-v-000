@@ -20,7 +20,7 @@ class PigLatinizer
     if vowels.include?(first_letter)
       result_text = text + "WAY"
     else
-      split_text = self.text.split("")
+      split_text = text.split("")
       vowel_index = split_text.index {|letter| vowels.include?(letter) }
 
       result_text = split_text.rotate(vowel_index).join("") + "AY"
