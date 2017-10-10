@@ -4,7 +4,7 @@ class PigLatinizer
 
   end
 
-  def to_pig_latin(text)
+  def to_pig_latin(sentence)
 
   end
 
