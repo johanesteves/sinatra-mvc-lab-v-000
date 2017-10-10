@@ -2,8 +2,12 @@ class PigLatinizer
   attr_reader :text
 
   def initialize
+    
   end
 
+  def method(to_pig_latin)
+    
+  end
 
   def firstletter
     self.text[0]
