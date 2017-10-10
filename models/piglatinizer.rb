@@ -1,12 +1,12 @@
 class PigLatinizer
   attr_reader :text
 
-  def initialize(text=nil)
-    @text = text
+  def initialize(string=nil)
+    @string = string
   end
 
   def firstletter
-    self.text[0].upcase
+    self.text[0]
   end
 
   def piglatinize
