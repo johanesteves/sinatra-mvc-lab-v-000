@@ -6,7 +6,7 @@ class PigLatinizer
   end
 
   def firstletter
-    self.text[0]
+    self.text[0].upcase
   end
 
   def piglatinize
