@@ -9,7 +9,7 @@ class PigLatinizer
   end
 
   def firstletter(text)
-    text[0].upcase
+    text[0]
   end
 
   def piglatinize(text)
