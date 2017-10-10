@@ -12,11 +12,13 @@ class PigLatinize
   def latinize
     vowels = ["A","E", "I", "O", "U"]
 
-    if vowels.include(self.firstletter)
+    if vowels.include?(self.firstletter)
       result_text = self.text + "way"
     else
       split_text = self.text.split("")
-      vowel_index = split_text.index {|letter| vowels.include(letter) }
+      vowel_index = split_text.index {|letter| vowels.include?(letter) }
+
+
     end
   end
 end
