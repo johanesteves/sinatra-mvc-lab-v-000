@@ -10,7 +10,9 @@ class PigLatinize
   end
 
   def latinize
-    vowels = ["A","E", I, O, U]
-    if
+    vowels = ["A","E", "I", "O", "U"]
+
+    if vowels.include(self.firstletter)
+
   end
 end
