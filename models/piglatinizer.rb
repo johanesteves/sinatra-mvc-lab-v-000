@@ -14,6 +14,7 @@ class PigLatinizer
 
   def piglatinize(text)
     vowels = ["A","E", "I", "O", "U"]
+    first_letter = self.firstletter(text)
 
     if vowels.include?(self.firstletter)
       result_text = self.text + "WAY"
