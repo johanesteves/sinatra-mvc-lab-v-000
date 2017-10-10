@@ -5,15 +5,12 @@ class PigLatinizer
     @string = string
   end
 
-  def text
-    self.string.upcase
-  end
 
   def firstletter
     self.text[0]
   end
 
-  def piglatinize
+  def piglatinize(text)
     vowels = ["A","E", "I", "O", "U"]
 
     if vowels.include?(self.firstletter)
