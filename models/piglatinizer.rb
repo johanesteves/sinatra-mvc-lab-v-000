@@ -5,7 +5,7 @@ class PigLatinizer
   end
 
   def to_pig_latin(sentence)
-    sentence.split(" ")
+    split_sentence = sentence.split(" ")
   end
 
   def firstletter(text)
