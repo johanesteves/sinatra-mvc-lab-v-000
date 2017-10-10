@@ -15,7 +15,7 @@ class PigLatinize
     if vowels.include(self.firstletter)
       result_text = self.text + "way"
     else
-      self.text.split("")
+      split_text = self.text.split("")
     end
   end
 end
