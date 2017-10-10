@@ -14,5 +14,6 @@ class PigLatinize
 
     if vowels.include(self.firstletter)
       test + "way"
+    end
   end
 end
