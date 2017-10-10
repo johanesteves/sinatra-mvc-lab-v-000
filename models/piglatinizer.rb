@@ -14,7 +14,7 @@ class PigLatinizer
   end
 
   def piglatinize(text)
-    vowels = ["A","E", "I", "O", "U"]
+    vowels = ["A","E", "I", "O", "U", "a", "e", "i", "o", "u"]
     text = text.upcase
     first_letter = self.firstletter(text)
 
