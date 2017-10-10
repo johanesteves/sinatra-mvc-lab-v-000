@@ -9,13 +9,10 @@ class PigLatinizer
     split_sentence.collect {|word| self.piglatinize(word)}.join(" ")
   end
 
-  def firstletter(text)
-    text[0]
-  end
 
   def piglatinize(text)
     vowels = ["A","E", "I", "O", "U", "a", "e", "i", "o", "u"]
-    first_letter = self.firstletter(text)
+    first_letter = text[0]
 
     if vowels.include?(first_letter)
       result_text = text + "way"
