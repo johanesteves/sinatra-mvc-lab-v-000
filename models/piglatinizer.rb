@@ -5,6 +5,10 @@ class PigLatinizer
     @string = string
   end
 
+  def capatalize
+    self.string.upcase
+  end
+
   def firstletter
     self.text[0]
   end
