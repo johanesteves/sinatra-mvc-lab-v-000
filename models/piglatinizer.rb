@@ -24,7 +24,6 @@ class PigLatinizer
       vowel_index = split_text.index {|letter| vowels.include?(letter) }
 
       result_text = split_text.rotate(vowel_index).join("") + "ay"
-      result_text.downcase
     end
   end
 end
